@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    background-image: url('https://cdn.pixabay.com/photo/2016/10/25/12/28/thunderstorm-1768742_640.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+form{
+    background-image: url('https://cdn.pixabay.com/photo/2021/05/10/14/48/rain-6243559_640.jpg');
+    width: 400px;
+    height: 700px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+input{
+    padding-left: 30px;
+    position: relative;
+    bottom: 200px;
+}
+.card1{
+    margin-top: 200px;
+}
+.icon{
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    top: -150px;
+}
+.text{
+    position: relative;
+    bottom: 150px;
+}
+.card2{
+    position: relative;
+    bottom: 50px;
+}
+.overlay{
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-right-color: #25b09b;
+    animation: l15 1s infinite linear;
+  }
+  .loader::before,
+  .loader::after {    
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+    animation: l15 2s infinite;
+  }
+  .loader::after {
+    margin: 8px;
+    animation-duration: 3s;
+  }
+  @keyframes l15{ 
+    100%{transform: rotate(1turn)}
+  }
+
+  @media only screen and (max-width: 400px) {
+    input{
+      width: 50%;
+    }
+  }

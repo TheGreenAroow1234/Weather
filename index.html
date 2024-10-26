@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body class="container">
+    <div class="card1">
+        <h1 class="text">Weather</h1>
+        <form id="changeLocation">
+            <input name="city" class="form-control w-100" list="datalistOptions" id="exampleDataList" placeholder="Search...">
+            <div class="icon-container icon1">
+                <img class="icon" width="250" height="250" id="weatherIcon" src="" alt="">
+                <div id="details" class="card2">
+        
+                </div>
+            </div>
+        </form>
+    </div>
+
+    
+    <div class="overlay d-none" id="overlay">
+        <div class="loader"></div>
+    </div>
+    <script src="/js/request.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
